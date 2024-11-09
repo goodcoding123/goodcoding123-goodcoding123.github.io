@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메모 웹사이트</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>메모</h1>
+        <textarea id="memoInput" placeholder="메모를 입력하세요..."></textarea>
+        <button onclick="addMemo()">메모 추가</button>
+        <ul id="memoList"></ul>
+    </div>
+    <!-- 팝업 창 -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="popupClose" class="popup-close" onclick="closePopup()">×</span>
+            <h2>메모 보기</h2>
+            <p id="popupText"></p>
+            <p id="popupDate" class="popup-date"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
